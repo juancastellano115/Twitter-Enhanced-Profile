@@ -1,6 +1,8 @@
 <template>
   <div id="app">
+    <div class="center">
     <router-view/>
+    </div>
   </div>
 </template>
 
@@ -11,18 +13,17 @@
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: whitesmoke;
- 
 }
 
-#nav {
-  padding: 30px;
+.center{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
 }
 
-#nav a {
-  font-weight: bold;
-  color: white;
-}
 
+body { background: rgb(26, 30, 34) !important;}
 
-body { background: #2c3e50 !important;}
 </style>

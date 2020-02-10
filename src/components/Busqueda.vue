@@ -1,31 +1,34 @@
 <template>
   <div class="hello">
-    <img src="../assets/LogoMakr_43piDa.png" alt="" id="logo">
-    <h1 class="font-weight-bold">Twitter Enhanced Profile</h1>
-    <b-container>
-      <b-form-input class="border-0" v-model="user" placeholder="Enter your name" @change="onsumbit"></b-form-input>
-    
+    <b-container >
+      <i class="fab fa-twitter fa-6x"></i>
+      <h1>Twitter Enhanced Profile</h1>
+      <b-container>
+        <b-form-input
+          class="border-0"
+          v-model="user"
+          placeholder="Enter your name"
+          @change="onsumbit"
+        ></b-form-input>
+      </b-container>
     </b-container>
-
   </div>
 </template>
 
 <script>
-
 export default {
-  name: 'HelloWorld',
-  data(){
-    return{
-      user : "",
+  name: "HelloWorld",
+  data() {
+    return {
+      user: ""
+    };
+  },
+  methods: {
+    onsumbit: function() {
+      this.$router.push({ name: "datos", params: { userId: `${this.user}` } });
     }
   }
-  ,
-    methods: {
-     onsumbit : function () {
-       this.$router.push({ name: 'datos', params: { userId: `${this.user}`} })
-     }
-   }
-}
+};
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
@@ -46,21 +49,18 @@ a {
   color: #42b983;
 }
 
-input{
+input {
   height: 4rem;
   font-size: 20pt;
   background: #212d3a;
-
+  font-family: 'Source Code Pro', monospace;
 }
 .form-control:focus {
-        box-shadow: 0 0 0.8rem 0.2rem  rgba(96, 60, 255, 0.774);
-        background: #212d3a;
-        color: white;
-    } 
-
-#logo {
-  width: 9rem;
-  margin-top: 3rem;
+  background: #212d3a;
+  color: rgb(121, 184, 255);;
 }
 
+.fa-twitter {
+  color: rgb(0, 112, 243);
+}
 </style>
