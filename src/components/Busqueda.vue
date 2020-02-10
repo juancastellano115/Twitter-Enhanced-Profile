@@ -22,7 +22,7 @@ export default {
   ,
     methods: {
      onsumbit : function () {
-       this.$router.push('/Datos')
+       this.$router.push({ name: 'datos', params: { userId: `${this.user}`} })
      }
    }
 }
@@ -32,7 +32,7 @@ export default {
 <style scoped>
 h1 {
   margin: 3rem;
-  color: #7386e4
+  color: white;
 }
 ul {
   list-style-type: none;
