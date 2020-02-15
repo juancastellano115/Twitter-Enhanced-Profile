@@ -1,8 +1,10 @@
 <template>
+<div class="center">
   <div class="home">
       <transition appear name="fade">
       <Busqueda/>
       </transition>
+  </div>
   </div>
 </template>
 
@@ -25,4 +27,5 @@ export default {
 .fade-enter, .fade-leave-to /* .fade-leave-active below version 2.1.8 */ {
   opacity: 0;
 }
+
 </style>
