@@ -101,7 +101,7 @@ export default {
   },
   mounted() {
     this.axios
-      .get(`http://192.168.1.55:5000/${this.$route.params.userId}`)
+      .get(`https://teprest.herokuapp.com/${this.$route.params.userId}`)
       .then(response => {
         this.nombre = response.data.usuario.nombre;
         this.description = response.data.usuario.description;
