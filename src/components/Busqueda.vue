@@ -1,6 +1,6 @@
 <template>
   <div class="hello">
-    <b-container >
+    <b-container>
       <i class="fab fa-twitter fa-6x"></i>
       <h1>Twitter Enhanced Profile</h1>
       <b-container>
@@ -53,11 +53,11 @@ input {
   height: 4rem;
   font-size: 20pt;
   background: #212d3a;
-  font-family: 'Source Code Pro', monospace;
+  font-family: "Source Code Pro", monospace;
 }
 .form-control:focus {
   background: #212d3a;
-  color: rgb(121, 184, 255);;
+  color: rgb(121, 184, 255);
 }
 
 .fa-twitter {

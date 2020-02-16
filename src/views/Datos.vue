@@ -37,7 +37,9 @@
       <b-container v-if="errored" class="center">
         <h3 class="scrname display-3">Oops! vaya vaya la papaia...</h3>
       </b-container>
-        <p class="mt-3 small text-center ">Creado con Vue, chart.js, bootstrap Vue, node JS, y mucho ❤️</p>
+      <p class="mt-3 small text-center ">
+        Creado con Vue, chart.js, bootstrap Vue, node JS, y mucho ❤️
+      </p>
     </b-container>
     <b-container class="center" v-if="loading">
       <b-spinner variant="primary" label="Spinning"></b-spinner>
@@ -141,7 +143,6 @@ export default {
   }
 };
 
-//TODO cambiar las fuientes de google fonts y quitar roboto condensed
 </script>
 
 <style scoped>
